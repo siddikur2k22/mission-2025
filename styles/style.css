@@ -31,18 +31,94 @@ section {
 .flex {
     display: flex;
 }
+.three-e{
+    color: #3E3E3E;
+}
 
 /* header */
-.header-right-left {
+
+.header-container{
+    justify-content: space-evenly;
+    /* justify-items: center; */
+
+}
+.header-left-side {
     width: 50%;
+    padding-top: 140px;
+}
+.header-title{
+    font-family: "Yeseva One", serif;
+    /* height: 160px; */
+    font-size: 3.75rem;
+    width: 503px;
+}
+#h-t-prblm{
+    /* margin-right: 14px;
+    background-color: #FF5959;
+    width: 4px;
+    height: 124px;
+    
+    border-radius: 5px; */
+
+}
+
+.header-description{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    width: 471px;
+}
+.btn-primary{
+    border-radius: 5px;
+    color: #fff;
+    background-color: #FF5959;
+    padding: 12px 35px;
+    border: none;
+    
+}
+.header-bottom-description{
+    padding-top: 20px;
+    color: #434343;
 }
 
 .header-right-side {
-    width: 50%;
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 }
 .hero{
-    width: 100%;
+   
+    width: 350px;
+
+    /* width: 80%; */
+}
+
+
+
+
+.m25{
+    color: #FFAD5A;
+}
+
+/* Responsive medium device */
+@media screen and (max-width:576px) {
+    .header-container{
+        flex-direction: column-reverse;
+    }
+    .header-title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .header-description{
+        text-align: center;
+        
+    }
+    .hero{
+        
+        width: 100%;
+        /* background-position: center; */
+    }
+    .btn-primary{
+        margin-left: 180px
+    }
+    .header-bottom-description{
+        text-align: center;
+    }
+    
 }
