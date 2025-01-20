@@ -141,7 +141,6 @@ header {
 
 .mission {
     border-radius: 26px;
-    /* gap: 24px; */
     margin-right: 30px;
     height: 347px;
     width: 360px;
@@ -193,26 +192,105 @@ header {
     padding-bottom: 19px;
 }
 
+/* global community */
+.global-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.project {
+    border-radius: 26px;
+    width: 400px;
+}
+
+.global-right-side {
+    width: 50%;
+}
+
+.global-title {
+    width: 435px;
+    height: 108px;
+    font-size: 2.25rem;
+    color: #333333;
+    padding-bottom: 17px;
+}
+
+.global-description {
+    width: 554px;
+    padding-bottom: 19px;
+}
+/* corona-application-title */
+.corona-application-title{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* corona application */
+.corona-right-side {
+    padding-top: 140px;
+    width: 50%;
+}
+
+.corona-title {
+    width: 435px;
+    height: 108px;
+    font-size: 2.25rem;
+    color: #333333;
+    padding-bottom: 17px;
+}
+
+.corona-description {
+    width: 554px;
+    padding-bottom: 19px;
+}
+
+/* footer */
+.footer-container{
+    max-width: 1280px;
+    height: 170px;
+    margin: 0 auto;
+    background-color: #0B0D17;
+}
+.footer-title{
+    padding-top: 39px;
+    padding-bottom: 22px;    
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-family:Yeseva One ;
+}
+.footer-description{
+    color: #D9DBE1;
+    text-align: center;
+}
 
 /* Responsive medium device */
 @media screen and (max-width:576px) {
 
     .header-container,
-    .mission-container,
-    .develop-container {
+    .develop-container,
+    .global-container {
         flex-direction: column-reverse;
     }
 
-    .header-title,
-    .develop-title {
+    .mission-container {
+        flex-direction: column;
+        margin-right: 59px;
+    }
+
+    .header-title {
         font-size: 3rem;
         text-align: center;
     }
 
     .header-description,
-    .develop-description {
+    .develop-description,
+    .global-description,
+    .corona-description {
         padding-top: 30px;
-        text-align: left;
+        text-align: center;
         width: 360px;
         padding-left: 60px;
 
@@ -229,7 +307,7 @@ header {
     }
 
     .btn-primary {
-        margin-left: 180px
+        margin-left: 150px
     }
 
     .header-bottom-description {
@@ -243,19 +321,39 @@ header {
     .mission-center,
     .mission {
         margin-bottom: 20px;
-        margin-left: 150px;
+        margin-left: 70px;
     }
-    
+
     .my-mission-title {
         padding-left: 80px;
         text-align: center;
         width: 350px;
     }
 
-    .mission-div{
-        margin: 0 auto;
+    .mission-div {}
+
+
+    .mission-img {
+        width: 135px;
     }
 
+    /* develop */
+    .coding,
+    .project {
+        padding-top: 49px;
+        padding-left: 69px;
+        width: 360px;
+    }
+
+    .develop-title,
+    .global-title,
+    .corona-title {
+        padding-left: 99px;
+    }
+    .footer-container {
+        width: 100%;
+        margin: 0;
+    }
 
 }
 
