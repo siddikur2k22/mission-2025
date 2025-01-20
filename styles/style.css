@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap');
 
+
+.hide {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,28 +36,44 @@ section {
 .flex {
     display: flex;
 }
-.three-e{
+
+/* share color */
+.three-e {
     color: #3E3E3E;
 }
 
-/* header */
+.four-2 {
+    color: #424242;
+}
 
-.header-container{
+.m25 {
+    color: #FFAD5A;
+}
+
+/* header */
+header {
+    margin-bottom: 120px;
+}
+
+.header-container {
     justify-content: space-evenly;
     /* justify-items: center; */
 
 }
+
 .header-left-side {
     width: 50%;
     padding-top: 140px;
 }
-.header-title{
+
+.header-title {
     font-family: "Yeseva One", serif;
     /* height: 160px; */
     font-size: 3.75rem;
     width: 503px;
 }
-#h-t-prblm{
+
+#h-t-prblm {
     /* margin-right: 14px;
     background-color: #FF5959;
     width: 4px;
@@ -62,63 +83,183 @@ section {
 
 }
 
-.header-description{
+.header-description {
     padding-top: 18px;
     padding-bottom: 20px;
     width: 471px;
 }
-.btn-primary{
+
+.btn-primary {
     border-radius: 5px;
     color: #fff;
     background-color: #FF5959;
     padding: 12px 35px;
     border: none;
-    
+
 }
-.header-bottom-description{
+
+.header-bottom-description {
     padding-top: 20px;
     color: #434343;
 }
 
-.header-right-side {
-}
-.hero{
-   
+
+.hero {
+
     width: 350px;
 
-    /* width: 80%; */
+}
+
+/* mission */
+
+.my-mission-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 48px;
+}
+
+.mission-container {
+    justify-content: space-around;
+    /* align-items: center; */
+
+}
+
+.mission-img {
+    width: 140px;
+}
+
+.mission-description {
+    width: 315px;
 }
 
 
-
-
-.m25{
-    color: #FFAD5A;
+.mission-div {
+    padding-top: 25px;
+    padding-left: 32px;
 }
+
+.mission {
+    border-radius: 26px;
+    /* gap: 24px; */
+    margin-right: 30px;
+    height: 347px;
+    width: 360px;
+    background-color: rgba(79, 157, 166, 0.1);
+}
+
+.mission-center {
+    border-radius: 26px;
+    /* gap: 24px; */
+    margin-right: 30px;
+    height: 347px;
+    width: 360px;
+    background-color: rgba(171, 144, 144, 0.1);
+}
+
+.mission-right {
+    border-radius: 26px;
+    /* gap: 24px; */
+    margin-right: 30px;
+    height: 347px;
+    width: 360px;
+    background-color: rgba(255, 244, 214, 1);
+}
+
+/* develops */
+.develop-container {
+    justify-content: space-evenly;
+}
+
+.coding {
+    border-radius: 26px;
+    width: 400px;
+}
+
+.develop-right-side {
+    width: 50%;
+}
+
+.develop-title {
+    width: 435px;
+    height: 108px;
+    font-size: 2.25rem;
+    color: #333333;
+    padding-bottom: 17px;
+}
+
+.develop-description {
+    width: 554px;
+    padding-bottom: 19px;
+}
+
 
 /* Responsive medium device */
 @media screen and (max-width:576px) {
-    .header-container{
+
+    .header-container,
+    .mission-container,
+    .develop-container {
         flex-direction: column-reverse;
     }
-    .header-title{
+
+    .header-title,
+    .develop-title {
         font-size: 3rem;
         text-align: center;
     }
-    .header-description{
-        text-align: center;
-        
+
+    .header-description,
+    .develop-description {
+        padding-top: 30px;
+        text-align: left;
+        width: 360px;
+        padding-left: 60px;
+
     }
-    .hero{
-        
-        width: 100%;
-        /* background-position: center; */
+
+    .header-right-side {
+        margin: 0 auto;
+        /* padding-left: 70px; */
+        align-items: center;
     }
-    .btn-primary{
+
+    .hero {
+        padding-left: 60px;
+    }
+
+    .btn-primary {
         margin-left: 180px
     }
-    .header-bottom-description{
+
+    .header-bottom-description {
         text-align: center;
+        width: 360px;
+        padding-left: 60px;
+    }
+
+    /* mission-25 */
+    .mission-right,
+    .mission-center,
+    .mission {
+        margin-bottom: 20px;
+        margin-left: 150px;
     }
     
+    .my-mission-title {
+        padding-left: 80px;
+        text-align: center;
+        width: 350px;
+    }
+
+    .mission-div{
+        margin: 0 auto;
+    }
+
+
 }
+
+
+
+/* large device responsive */
+@media screen and (min-width:577px) and (max-width:1024px) {}
